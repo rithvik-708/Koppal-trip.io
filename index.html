@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>For My Wifey, My Jaanu ❤️ • Koppal Trip</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            overflow-y: auto !important;
+            min-height: 100%;
+            scrollbar-width: thin;
+            scrollbar-color: #e11d48 #f8f3ed;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: visible !important;
+            min-height: 100vh;
+            touch-action: pan-y;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        main> :first-child {
+            margin-top: 0 !important;
+        }
+
+        main> :last-child {
+            margin-bottom: 0 !important;
+        }
+
+        /* Romantic styled scrollbar for comfortable scrolling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f8f3ed;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e11d48;
+            border-radius: 9999px;
+            border: 2px solid #f8f3ed;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #be0037;
+        }
+
+        /* Equalizer Waveform Animation */
+        @keyframes soundWave1 {
+
+            0%,
+            100% {
+                height: 4px;
+            }
+
+            50% {
+                height: 15px;
+            }
+        }
+
+        @keyframes soundWave2 {
+
+            0%,
+            100% {
+                height: 13px;
+            }
+
+            50% {
+                height: 4px;
+            }
+        }
+
+        @keyframes soundWave3 {
+
+            0%,
+            100% {
+                height: 6px;
+            }
+
+            50% {
+                height: 16px;
+            }
+        }
+
+        @keyframes soundWave4 {
+
+            0%,
+            100% {
+                height: 11px;
+            }
+
+            50% {
+                height: 5px;
+            }
+        }
+
+        .music-playing .music-bar:nth-child(1) {
+            animation: soundWave1 0.85s ease-in-out infinite;
+        }
+
+        .music-playing .music-bar:nth-child(2) {
+            animation: soundWave2 0.7s ease-in-out infinite;
+        }
+
+        .music-playing .music-bar:nth-child(3) {
+            animation: soundWave3 1.05s ease-in-out infinite;
+        }
+
+        .music-playing .music-bar:nth-child(4) {
+            animation: soundWave4 0.8s ease-in-out infinite;
+        }
+
+        /* Floating Stamp Mini Hearts */
+        @keyframes floatHeart {
+            0% {
+                transform: translate(0, 0) scale(0.6);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(var(--tx), var(--ty)) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        .floating-heart {
+            position: absolute;
+            pointer-events: none;
+            animation: floatHeart 1.2s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#ffb3b6",
+                        "background": "#fef9f3",
+                        "on-tertiary-fixed-variant": "#2c4e36",
+                        "outline": "#906f70",
+                        "on-surface-variant": "#5c3f40",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fef9f3",
+                        "secondary-fixed-dim": "#ffb2bb",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#c5eccc",
+                        "on-primary-fixed-variant": "#920028",
+                        "primary-container": "#e11d48",
+                        "on-secondary-container": "#7a3842",
+                        "on-secondary-fixed-variant": "#73323d",
+                        "on-surface": "#1d1b18",
+                        "surface-container-high": "#ece7e2",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#597c61",
+                        "on-tertiary-container": "#f2fff1",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e6e2dc",
+                        "on-primary-container": "#fffaf9",
+                        "on-background": "#1d1b18",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e6e2dc",
+                        "inverse-surface": "#32302c",
+                        "surface-bright": "#fef9f3",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#41634a",
+                        "on-primary-fixed": "#40000c",
+                        "on-tertiary-fixed": "#00210e",
+                        "secondary-fixed": "#ffd9dc",
+                        "on-secondary-fixed": "#3b0613",
+                        "outline-variant": "#e5bdbe",
+                        "surface-tint": "#be0037",
+                        "error": "#ba1a1a",
+                        "surface-container": "#f2ede7",
+                        "primary-fixed-dim": "#ffb3b6",
+                        "primary-fixed": "#ffdada",
+                        "primary": "#b80035",
+                        "surface-container-low": "#f8f3ed",
+                        "secondary-container": "#ffa6b1",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#ded9d4",
+                        "secondary": "#8f4953",
+                        "inverse-on-surface": "#f5f0ea",
+                        "tertiary-fixed-dim": "#aad0b1"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "space-sm": "0.5rem",
+                        "space-xs": "0.25rem",
+                        "space-lg": "1.5rem",
+                        "gutter-mobile": "1rem",
+                        "space-xl": "2.5rem",
+                        "space-md": "1rem",
+                        "margin": "2.5rem",
+                        "gutter": "1.5rem",
+                        "margin-mobile": "1rem"
+                    },
+                    fontFamily: {
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-sm": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body
+    class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-w-[320px]">
+
+    <!-- Audio Element (Song in current directory) -->
+    <audio id="bg-audio" preload="auto" loop playsinline>
+        <source
+            src="Indila%20-%20Love%20Story%20(1%20hour%20felt%20piano%20for%20relaxation,%20stress%20relief,%20study).mp3"
+            type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Romantic Music Player Widget -->
+    <aside id="music-player-widget"
+        class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 transition-all duration-300">
+        <div
+            class="flex items-center gap-2.5 sm:gap-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-[0_8px_32px_rgba(118,75,68,0.22)] border border-secondary-fixed hover:border-primary-container/40 transition-all">
+            <!-- Play / Pause Button -->
+            <button id="music-toggle-btn"
+                class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-transform cursor-pointer"
+                aria-label="Play or pause romantic song">
+                <span id="music-icon" class="material-symbols-outlined text-xl sm:text-2xl"
+                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                <span id="music-pulse"
+                    class="absolute inset-0 rounded-full bg-primary-container/30 animate-ping hidden"></span>
+            </button>
+
+            <!-- Waveform Visualizer & Track Details -->
+            <div class="flex flex-col cursor-pointer select-none" onclick="toggleAudioPlayback()">
+                <div class="flex items-center gap-1.5">
+                    <span class="font-label-md text-xs sm:text-sm font-bold text-primary tracking-tight">Love Story •
+                        Indila</span>
+                    <!-- Equalizer bars -->
+                    <div id="music-bars" class="flex items-end gap-[3px] h-3.5 w-3.5 pb-0.5" title="Piano instrumental">
+                        <span
+                            class="music-bar w-[2px] bg-primary rounded-full h-1.5 transition-all duration-200"></span>
+                        <span
+                            class="music-bar w-[2px] bg-primary rounded-full h-2.5 transition-all duration-200"></span>
+                        <span class="music-bar w-[2px] bg-primary rounded-full h-1 transition-all duration-200"></span>
+                        <span class="music-bar w-[2px] bg-primary rounded-full h-3 transition-all duration-200"></span>
+                    </div>
+                </div>
+                <span id="music-status-text" class="font-label-sm text-[10px] sm:text-xs text-secondary font-medium">
+                    Our song • Tap to play ♪
+                </span>
+            </div>
+
+            <!-- Mute / Unmute Button -->
+            <button id="music-mute-btn"
+                class="w-7 h-7 sm:w-8 sm:h-8 rounded-full text-secondary hover:text-primary hover:bg-surface-container-high flex items-center justify-center transition-colors cursor-pointer"
+                aria-label="Toggle mute" onclick="toggleMute()">
+                <span id="mute-icon" class="material-symbols-outlined text-base sm:text-lg">volume_up</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Top Sticky Header -->
+    <header
+        class="fixed top-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-md shadow-[0_4px_20px_rgba(118,75,68,0.06)]">
+        <div
+            class="h-16 sm:h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <img alt="Wax Seal Heart Logo" class="h-7 sm:h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1XhIvjkYMXEK6Ijx23a1rfNQfJG-l7k2yT6c6klweAlYuPkJ0hA-FBZixjb4VJNtERULj9QoTM292FOKX1vasdGj3DAUS_OJoxEEfsEHeGkO5q3qt8HT1jLQb-wfPiq4XF4DjFhHzN1YnV_cBXvS2ufh2oS76_R1oA12DZMkAVNAM_xg69TCjUS4WFC9f1tCPFew9kXmoPDAyq6wrnWhFgL_pQ0SemlrkPAjm1j_hB4VWPpVSOrGE816Mo" />
+                <div class="flex flex-col">
+                    <span class="font-headline-sm text-base sm:text-xl text-primary font-bold tracking-tight">Our Next
+                        Chapter</span>
+                    <span
+                        class="font-label-sm text-[10px] sm:text-xs text-secondary tracking-widest uppercase hidden sm:inline">Koppal
+                        With My Favorite Girl</span>
+                </div>
+            </div>
+
+            <nav
+                class="hidden md:flex items-center gap-1 sm:gap-2 bg-surface-container-low px-2 py-1 rounded-full shadow-[0_1px_4px_rgba(118,75,68,0.05)] text-xs sm:text-sm">
+                <a class="px-3 py-1.5 rounded-full transition-all duration-200 bg-primary-container text-on-primary-container font-semibold shadow-xs"
+                    href="#the-letter">The Letter</a>
+                <a class="px-3 py-1.5 rounded-full font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200"
+                    href="#keepsake-ticket">Boarding Pass</a>
+                <a class="px-3 py-1.5 rounded-full font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200"
+                    href="#our-moments">Our Moments</a>
+                <a class="px-3 py-1.5 rounded-full font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200"
+                    href="#surprises">Surprises</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <div
+                    class="flex items-center gap-1.5 sm:gap-2 bg-surface-container-low px-2.5 sm:px-3 py-1 rounded-full shadow-[0_2px_10px_rgba(118,75,68,0.06)]">
+                    <img alt="Profile" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6L2TYLI-ErDuoYlVAj5z2V59AgjWYoWtwCjsD9rQNOt-4J3xADjIGDTO9OZ-qa5h8w_WE35P8gJdLdbU-VP7ivp9dIXeBg0o_ows2L_gHt4Rk5B4uW39ZybzFiKTmccDcAsSN6UERFKrFq2jDqBOarss53Nt53Wy4j5uLB-lxHCI6hkVpXVEsrMspsLmgil9jAD2bfeFl1Lq9W4ed8NCOJ5q-UNPOz7IOw0SapyoivzILHWoPH431og" />
+                    <span class="font-label-sm text-xs sm:text-sm text-on-surface-variant font-medium pr-1">Us forever
+                        ♡</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full pt-16 sm:pt-20 bg-surface min-h-[calc(100vh-140px)]">
+        <div class="flex flex-col w-full">
+            <!-- Interactive Heart & Confetti Canvas Overlay (Fixed for celebrations) -->
+            <canvas class="fixed inset-0 pointer-events-none z-50 w-full h-full hidden" id="scrapbook-canvas"></canvas>
+
+            <!-- Hero Section: Floating Parchment Love Letter -->
+            <section id="the-letter"
+                class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 pb-12 sm:pb-16 overflow-hidden">
+                <!-- Ambient Warm Glows -->
+                <div
+                    class="absolute -top-12 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10">
+                </div>
+                <div
+                    class="absolute top-1/3 right-4 sm:right-10 w-64 sm:w-80 h-64 sm:h-80 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10">
+                </div>
+
+                <!-- Letter Stationery Envelope Motif Container -->
+                <div class="relative mx-auto max-w-4xl">
+                    <!-- Faux Airmail Decorative Outer Border Envelope -->
+                    <div
+                        class="relative bg-surface-container p-2.5 sm:p-5 rounded-2xl sm:rounded-3xl shadow-[0_12px_36px_rgba(118,75,68,0.1)]">
+                        <!-- Air Mail striped inner border frame -->
+                        <div
+                            class="relative bg-surface-container-lowest rounded-xl sm:rounded-2xl p-5 sm:p-10 md:p-14 shadow-[0_4px_24px_rgba(118,75,68,0.07)]">
+                            <!-- Realistic Washi Tapes overlapping envelope -->
+                            <div
+                                class="absolute -top-3 left-4 sm:left-12 w-28 sm:w-36 h-6 sm:h-7 bg-secondary-container/70 -rotate-2 rounded-xs shadow-xs backdrop-blur-xs pointer-events-none flex items-center justify-center">
+                                <span
+                                    class="font-label-sm text-[10px] sm:text-xs text-on-secondary-container tracking-widest uppercase opacity-85">Special
+                                    Delivery ✦</span>
+                            </div>
+                            <div
+                                class="absolute -top-3 right-4 sm:right-16 w-24 sm:w-32 h-6 sm:h-7 bg-tertiary-fixed/70 rotate-3 rounded-xs shadow-xs backdrop-blur-xs pointer-events-none flex items-center justify-center">
+                                <span
+                                    class="font-label-sm text-[10px] sm:text-xs text-on-tertiary-fixed-variant tracking-wider uppercase opacity-85">For
+                                    My Jaanu ♡</span>
+                            </div>
+
+                            <!-- Postal Stamp Badge & Koppal Trip Header -->
+                            <div
+                                class="flex flex-col sm:flex-row sm:items-start justify-between gap-5 pb-6 sm:pb-8 border-b border-outline-variant/30">
+                                <!-- Stamped Header -->
+                                <div class="space-y-3">
+                                    <div
+                                        class="inline-flex items-center gap-1.5 sm:gap-2 bg-secondary-fixed/60 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full">
+                                        <span class="material-symbols-outlined text-primary text-sm sm:text-base"
+                                            style="font-variation-settings: 'FILL' 1;">favorite</span>
+                                        <span
+                                            class="font-label-md text-xs sm:text-sm text-primary font-semibold tracking-wide">
+                                            To my wifey, my jaanu, my baby, my bacha, my whole world ❤️
+                                        </span>
+                                    </div>
+                                    <h1
+                                        class="font-headline-lg text-2xl sm:text-3xl md:text-4xl text-primary font-bold tracking-tight">
+                                        My sweetest wifeyyyyy, 🥹❤️
+                                    </h1>
+                                    <p class="font-headline-sm text-base sm:text-lg text-secondary italic">
+                                        Counting down every second until I hold you in Koppal...
+                                    </p>
+                                </div>
+
+                                <!-- Vintage Postmark Stamp Badge -->
+                                <!-- <div class="self-start sm:self-auto flex items-center gap-3 bg-surface-container-low p-2.5 sm:p-3.5 rounded-xl shadow-xs rotate-1">
+                                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-dashed border-outline-variant flex flex-col items-center justify-center text-center">
+                                        <span class="font-label-sm text-[10px] sm:text-xs text-primary font-bold leading-none">KOPPAL</span>
+                                        <span class="material-symbols-outlined text-primary text-base sm:text-lg leading-none"
+                                            style="font-variation-settings: 'FILL' 1;">favorite</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-sm text-[10px] sm:text-xs text-secondary tracking-widest uppercase">Special Date</span>
+                                        <div class="flex items-baseline gap-1">
+                                            <span class="font-headline-md text-base sm:text-lg text-primary font-semibold">Together</span>
+                                            <span class="text-primary-container animate-pulse text-xs">✦</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!-- Body Letter Content (Warm, touching, beautifully spaced) -->
+                            <div
+                                class="pt-6 sm:pt-8 space-y-5 sm:space-y-6 text-on-surface/90 font-body-lg text-base sm:text-lg leading-relaxed">
+                                <!-- <p>
+                                    Baby, do you even understand how excited your daddy is to come and spend an entire
+                                    day with his favourite person in this whole world? Just thinking about meeting you in
+                                    Koppal, seeing your beautiful face, hearing your voice right beside me, holding your
+                                    hand, and finally getting to spend all that time with you makes your hubby so, so
+                                    happy. 😘😘😘😘😘❤️❤️❤️❤️❤️❤️💕💕💕💕💕💕💕
+                                </p> -->
+
+                                <p>
+                                    Jaanu, I keep imagining our day together. Daddy coming to meet his baby in the
+                                    morning, seeing that pretty face of yours, probably teasing you within the first
+                                    five minutes, and then spending the whole day pretending that 24 hours are enough
+                                    when even an entire lifetime with you wouldn't feel enough.
+                                    😭😭😭😭😭😭😭❤️❤️❤️❤️❤️❤️
+                                </p>
+
+                                <p>
+                                    I want us to start our day with breakfast together, sitting across from each other,
+                                    stealing glances, smiling at each other for no reason, and talking about the most
+                                    random things ever. I want to see you enjoying your food, annoy you a little, make
+                                    you laugh, and watch you give daddy those looks when he's being extra dramatic. And
+                                    obviously, baby, your hubby is going to make sure you eat properly because taking
+                                    care of his wifey is one of his favourite jobs. Hehehe. 💖💖💖💖💖💖😁😁😁😁😁😁😁
+                                </p>
+
+                                <p>
+                                    Then I want us to go out, explore Koppal together, take cute pictures, walk around,
+                                    discover little places, and make memories that we'll look back at someday and smile
+                                    about. I want those pictures where we're both laughing, those random selfies where
+                                    neither of us looks ready, and those moments where we forget to take pictures
+                                    because we're too busy enjoying being together. 🤩🤩🤩🤩🤩💖💖💖💖💖
+                                </p>
+
+                                <p class="font-headline-sm text-lg sm:text-xl text-primary font-semibold italic">
+                                    And bacha, you know what I want the most? 🥹🥹🥹🥹🥹🥹💕💕💕💕💕
+                                </p>
+
+                                <!-- Emotional Quote Card 1 -->
+                                <div
+                                    class="p-4 sm:p-5 rounded-2xl bg-secondary-fixed/30 border-l-4 border-primary shadow-xs my-3">
+                                    <p
+                                        class="font-headline-sm text-base sm:text-lg text-primary italic font-medium leading-relaxed">
+                                        “It's not really about the places we'll visit or the food we'll eat. It's about
+                                        <span
+                                            class="font-bold underline decoration-primary/40 underline-offset-4">getting
+                                            to experience an ordinary day with you and making it feel extraordinary just
+                                            because we're together.</span>”
+                                        💖💖💖💖💖💖💕💕💕💕💕
+                                    </p>
+                                </div>
+
+                                <p>
+                                    I want to walk beside you, hold your hand, look at you when you're talking, listen
+                                    to all your stories, and remember all those little things about you that make you
+                                    <em>you</em>. I want to hear about your day, your thoughts, your dreams, your silly
+                                    complaints, and everything else that goes on in that adorable little head of yours.
+                                    Daddy wants to know you more, baby, even in all the tiny ways that nobody else might
+                                    notice. 🤭🤭🤭🤭😘😘😘😘😘
+                                </p>
+
+                                <p>
+                                    And jaanu, please be prepared because your hubby is going to be ridiculously clingy
+                                    that day. You're going to have to tolerate all the love, all the teasing, all the
+                                    random compliments, and all the times daddy looks at you and thinks, <em>"How did I
+                                        get so lucky to have this girl in my life?"</em> 🥹🥹🥹🥹🥹💗💗💗💗💗
+                                </p>
+
+                                <p>
+                                    I want our lunch together to be filled with conversations and laughter. I want us to
+                                    try something nice, share our little opinions about everything, and make even the
+                                    simplest moments feel special. And when we finally get some time to relax, I just
+                                    want to be with you without having to rush anywhere. No pressure to do something
+                                    exciting every second, no need to make every moment perfect. Just you and me, baby,
+                                    enjoying our little world. 💗💗💗💗💗😘😘😘😘😘
+                                </p>
+
+                                <p class="italic text-on-surface-variant font-headline-sm text-base sm:text-lg">
+                                    Because honestly, wifey, I think one of the most beautiful things about loving
+                                    someone is realising that you don't always need a grand plan. Sometimes, all you
+                                    need is your favourite person beside you.😍😍😍😍😍💖💖💖💖💖
+                                </p>
+
+                                <p>
+                                    I want to see you smile that smile of yours. I want to make you laugh until you
+                                    can't stop laughing. I want to tease you until you start complaining about your
+                                    annoying hubby. I want us to have our little inside jokes, our silly conversations,
+                                    our cute moments, and memories that belong only to us. 😘😘😘😘😘💖💖💖💖💖
+                                </p>
+
+                                <p>
+                                    And when the evening comes, baby, I already know I'm going to wish the day could
+                                    slow down. We'll go for a little walk, get some snacks, talk about everything and
+                                    nothing, and maybe take a few more pictures because daddy will obviously insist that
+                                    we haven't taken enough. Hehehe. 💖💖💖💖💖😍😍😍😍😍
+                                </p>
+
+                                <p class="font-headline-sm text-base sm:text-lg text-secondary italic">
+                                    But jaanu, I think the hardest part will be when it's time to say goodbye.
+                                </p>
+
+                                <p>
+                                    Because after spending the entire day with you, after getting used to having you
+                                    beside me, hearing you laugh, and seeing you right there in front of me, I'm
+                                    probably going to wish I could steal a few more minutes. Just five more minutes with
+                                    my baby. Then five more after that. And somehow, daddy will still feel like it
+                                    wasn't enough. 🥹🥹🥹🥹🥹🥹💕💕💕💕💕
+                                </p>
+
+                                <!-- Emotional Quote Card 2 -->
+                                <div
+                                    class="p-4 sm:p-5 rounded-2xl bg-secondary-fixed/30 border-l-4 border-primary shadow-xs my-3">
+                                    <p
+                                        class="font-headline-sm text-base sm:text-lg text-primary italic font-medium leading-relaxed">
+                                        “I want to hug you a little longer, look at your face a little longer, and tell
+                                        you how much you mean to me. I want you to go home knowing that your hubby had
+                                        the most beautiful day, not because Koppal was special, but because <span
+                                            class="font-bold underline decoration-primary/40 underline-offset-4">you
+                                            were there to make it special.</span>”
+
+                                        🤭🤭🤭🤭🤭🤭💖💖💖💖💖
+                                    </p>
+                                </div>
+
+                                <p>
+                                    My bacha, I know we can't always be together whenever we want. We have our
+                                    responsibilities, our work, our studies, our own little struggles, and so many
+                                    things waiting for us in life. But that's exactly why these moments matter so much
+                                    to me. Every opportunity to see you, spend time with you, and make you feel loved is
+                                    something I want to treasure. 💖💖💖💖💖💖💕💕💕💕💕
+                                </p>
+
+                                <p>
+                                    And baby, beyond this one trip, I dream about all the little adventures we'll have
+                                    someday. Different cities, new places, long walks, road trips, trying new foods,
+                                    getting lost somewhere and laughing about it later, taking a million pictures, and
+                                    coming home tired after a beautiful day together. 😍😍😍😍😍😍💖💖💖💖💖
+                                </p>
+
+                                <p>
+                                    I dream about the ordinary days too. The days when we don't go anywhere, when we're
+                                    just spending time together, being silly, talking about our day, and finding
+                                    happiness in the smallest things. I want that kind of love with you, jaanu. The
+                                    exciting adventures, yes, but also the peaceful, comfortable kind of love where we
+                                    can simply be ourselves. 🥹🥹🥹🥹🥹🥹💕💕💕💕💕
+                                </p>
+
+                                <p>
+                                    I want to keep learning how to love you better, how to understand you better, how to
+                                    make you feel safe, appreciated, respected, and cared for. I don't want to be
+                                    someone who only tells you beautiful things. I want my actions to make you feel
+                                    those beautiful things too. 😘😘😘😘😘💖💖💖💖💖
+
+                                </p>
+
+                                <p>
+                                    Because you're not just my baby or my girlfriend, wifey. You're the person I want to
+                                    keep choosing, keep growing with, and keep making memories with. You're my jaanu, my
+                                    bacha, my favourite person to annoy, my favourite person to talk to, and the girl
+                                    who can make daddy smile just by being herself. 😘😘😘😘😘💕💕💕💕💕
+                                </p>
+
+                                <p>
+                                    So, when we finally meet in Koppal, baby, I want you to forget about making
+                                    everything perfect. Let's just enjoy ourselves. Let's laugh too loudly, eat good
+                                    food, take silly pictures, talk endlessly, explore a little, and treasure every
+                                    moment we get together. 💕💕💕💕💕🥹🥹🥹🥹🥹🥹
+                                </p>
+
+                                <p>
+                                    Let daddy take care of his baby, let hubby spoil his wifey with love, and let us
+                                    make a day that we'll remember long after it's over. 😘😘😘😘😘💖💖💖💖💖
+                                </p>
+
+                                <p>
+                                    And when you read this letter, I hope you can feel even a little bit of the
+                                    happiness I'm feeling while imagining our time together. I hope you know that
+                                    somewhere, your daddy is already looking forward to seeing his beautiful girl,
+                                    holding her hand, and making her smile. 💕💕💕💕💕😘😘😘😘😘
+                                </p>
+
+                                <p class="text-primary font-semibold text-lg sm:text-xl">
+                                    I love you, my wifey. I love you, my jaanu. I love you, my baby, my bacha.
+                                    😘😘😘😘😘💖💖💖💖💖
+                                </p>
+
+                                <p>
+                                    Thank you for being a part of my life, for giving me someone to miss, someone to
+                                    look forward to seeing, and someone with whom even the simplest day can become a
+                                    beautiful memory.
+                                </p>
+
+                                <p>
+                                    Now come here, my baby. Daddy has a whole day of love, hugs, teasing, food dates,
+                                    cute pictures, and endless affection planned for his favourite girl. And your hubby
+                                    is absolutely not accepting any complaints about being too cheesy. Hehehe.
+                                    😭😭😭😭😭💗💗💗💗💗
+                                </p>
+
+                                <!-- Emotional Quote Card 3: Climax Highlight -->
+                                <div
+                                    class="p-4 sm:p-5 rounded-2xl bg-primary-fixed/40 border border-primary/25 text-center shadow-xs my-4">
+                                    <p
+                                        class="font-headline-sm text-base sm:text-lg md:text-xl text-primary font-bold italic">
+                                        ✦ Until I see you, my wifey, just remember that your daddy is counting down the
+                                        moments until he gets to be with you. ✦
+                                    </p>
+                                </div>
+
+                                <p class="text-primary font-medium italic text-lg sm:text-xl">
+                                    I love you endlessly, jaanu. More than these words can ever explain.
+                                </p>
+                            </div>
+
+                            <!-- Letter Signature and Wax Seal Impression -->
+                            <div
+                                class="pt-8 sm:pt-10 mt-6 sm:mt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6">
+                                <div class="space-y-3">
+                                    <p class="font-headline-sm text-base sm:text-lg text-secondary italic">
+                                        Forever your daddy, your hubby, your biggest supporter, your personal
+                                        troublemaker, and your boy. ❤️❤️❤️❤️❤️🫂🫂🫂🫂🫂
+                                    </p>
+                                    <div class="space-y-1">
+                                        <span
+                                            class="font-headline-md text-xl sm:text-2xl text-primary font-bold italic block">
+                                            Yours and only yours,
+                                        </span>
+                                        <span
+                                            class="font-headline-sm text-lg sm:text-xl text-primary font-semibold block">
+                                            Your Daddy. Your Hubby. Your forever person. 💍💍💍💍💍❤️❤️❤️❤️❤️
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Tactile Wax Stamp Graphic with Interactive Mini Hearts -->
+                                <div id="wax-seal"
+                                    class="relative self-end sm:self-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary-container shadow-[0_6px_20px_rgba(225,29,72,0.35)] flex items-center justify-center -rotate-6 transform hover:rotate-0 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer select-none"
+                                    title="Sealed with love • Tap for hearts!" onclick="celebrateStamp(this)">
+                                    <div
+                                        class="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-primary/40 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-on-primary text-2xl sm:text-3xl"
+                                            style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Keepsake Boarding Pass: Koppal Trip Edition -->
+            <section id="keepsake-ticket" class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-center gap-space-xs mb-4">
+                        <span class="material-symbols-outlined text-primary">confirmation_number</span>
+                        <span
+                            class="font-label-md text-xs sm:text-sm text-secondary uppercase tracking-widest font-semibold">Official
+                            Keepsake Travel Document</span>
+                    </div>
+
+                    <!-- Ticket Stub Styled Element -->
+                    <div
+                        class="relative bg-surface-container-lowest rounded-2xl shadow-[0_8px_28px_rgba(118,75,68,0.1)] overflow-hidden flex flex-col md:flex-row border border-secondary-fixed/40">
+                        <!-- Main Flight Section -->
+                        <div class="flex-1 p-5 sm:p-8 flex flex-col justify-between gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary text-xl">favorite</span>
+                                    <span
+                                        class="font-label-lg text-xs sm:text-sm font-bold text-primary tracking-wide uppercase">
+                                        ROMANTIC EXPEDITION • KOPPAL TRIP
+                                    </span>
+                                </div>
+                                <span
+                                    class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-xs font-semibold">
+                                    Priority In My Heart ♡
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-2 sm:gap-4 text-center items-center">
+                                <div class="text-left">
+                                    <span
+                                        class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant block uppercase font-medium">Origin</span>
+                                    <span
+                                        class="font-headline-md text-lg sm:text-2xl text-primary font-bold">HERE</span>
+                                    <span class="font-body-sm text-xs text-on-surface-variant block">Routine Life</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-2xl rotate-90 md:rotate-0">flight</span>
+                                    <span class="font-label-sm text-[10px] sm:text-xs text-secondary italic">Meeting
+                                        You</span>
+                                </div>
+                                <div class="text-right">
+                                    <span
+                                        class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant block uppercase font-medium">Destination</span>
+                                    <span
+                                        class="font-headline-md text-lg sm:text-2xl text-primary font-bold">KOPPAL</span>
+                                    <span class="font-body-sm text-xs text-on-surface-variant block">With My Wifey
+                                        ♡</span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-3 bg-surface-container-low p-3.5 sm:p-4 rounded-xl text-xs sm:text-sm">
+                                <div>
+                                    <span
+                                        class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant block uppercase">Trip</span>
+                                    <span class="font-label-lg text-on-surface font-semibold">KOPPAL-2025</span>
+                                </div>
+                                <div>
+                                    <span
+                                        class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant block uppercase">Gate</span>
+                                    <span class="font-label-lg text-primary font-semibold">YOUR HEART</span>
+                                </div>
+                                <div>
+                                    <span
+                                        class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant block uppercase">Seat</span>
+                                    <span class="font-label-lg text-on-surface font-semibold">Beside Daddy</span>
+                                </div>
+                                <div>
+                                    <span
+                                        class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant block uppercase">Status</span>
+                                    <span class="font-label-lg text-tertiary font-semibold flex items-center gap-1">
+                                        <span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> Confirmed ✓
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stub Tear-off Division Line -->
+                        <div
+                            class="relative bg-secondary-fixed/30 flex md:flex-col items-center justify-between p-5 sm:p-6 md:w-56 text-center border-t md:border-t-0 md:border-l border-dashed border-outline-variant/60">
+                            <div class="w-full space-y-2 sm:space-y-3">
+                                <span
+                                    class="font-label-sm text-[10px] sm:text-xs text-secondary uppercase tracking-widest block">Passenger</span>
+                                <span
+                                    class="font-headline-sm text-base sm:text-lg text-on-surface block font-semibold">My
+                                    Sweet Wifey</span>
+                                <div class="inline-block px-3 py-1 bg-surface-container-lowest rounded-md shadow-xs">
+                                    <span
+                                        class="font-label-md text-xs sm:text-sm text-primary font-mono font-bold">#KOPPAL-MINE</span>
+                                </div>
+                            </div>
+
+                            <!-- Barcode mockup -->
+                            <div class="hidden sm:flex items-center justify-center gap-1 pt-3 opacity-70">
+                                <div class="w-1 h-7 bg-on-surface"></div>
+                                <div class="w-2 h-7 bg-on-surface"></div>
+                                <div class="w-0.5 h-7 bg-on-surface"></div>
+                                <div class="w-1.5 h-7 bg-on-surface"></div>
+                                <div class="w-0.5 h-7 bg-on-surface"></div>
+                                <div class="w-2 h-7 bg-on-surface"></div>
+                                <div class="w-1 h-7 bg-on-surface"></div>
+                                <div class="w-3 h-7 bg-on-surface"></div>
+                                <div class="w-1.5 h-7 bg-on-surface"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Photo Scrapbooking Timeline: Koppal Story -->
+
+
+            <!-- Interactive Surprises Checklist Section -->
+            <section id="surprises" class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+                <div
+                    class="bg-surface-container-low rounded-2xl sm:rounded-3xl p-5 sm:p-10 lg:p-12 shadow-[0_8px_32px_rgba(118,75,68,0.06)] relative overflow-hidden">
+                    <div class="max-w-3xl mb-8 sm:mb-10 space-y-2">
+                        <span
+                            class="font-label-sm text-xs sm:text-sm text-primary font-semibold tracking-wider uppercase">Daddy's
+                            Promise</span>
+                        <h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl text-on-surface">Things Planned
+                            Just For You</h2>
+                        <p class="font-body-md text-sm sm:text-base text-on-surface-variant">
+                            Tap each card to reveal the little promises for our day in Koppal.
+                        </p>
+                    </div>
+
+                    <!-- Interactive Checklist Cards Bento -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 relative z-10">
+                        <!-- Surprise 1 -->
+                        <div class="cursor-pointer bg-surface-container-lowest p-5 sm:p-6 rounded-2xl shadow-xs hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group"
+                            onclick="toggleSurprise(this)">
+                            <div class="flex items-start justify-between gap-3">
+                                <div
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined text-xl sm:text-2xl">restaurant</span>
+                                </div>
+                                <span
+                                    class="text-tertiary font-label-sm text-xs font-semibold bg-tertiary-fixed/40 px-2.5 py-1 rounded-full">
+                                    Promised ✓
+                                </span>
+                            </div>
+                            <h4
+                                class="font-headline-sm text-base sm:text-lg text-on-surface mt-3 sm:mt-4 font-semibold group-hover:text-primary transition-colors">
+                                Morning Breakfast Date & Stolen Looks
+                            </h4>
+                            <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant mt-2 leading-relaxed">
+                                Sitting across from you, admiring how gorgeous you look, and making sure my wifey eats
+                                properly without any stress.
+                            </p>
+                            <div
+                                class="mt-3 pt-2.5 flex items-center gap-1.5 text-primary font-label-sm text-xs font-medium">
+                                <span class="material-symbols-outlined text-sm">favorite</span>
+                                <span>Daddy's favourite job: Taking care of his girl</span>
+                            </div>
+                        </div>
+
+                        <!-- Surprise 2 -->
+                        <div class="cursor-pointer bg-surface-container-lowest p-5 sm:p-6 rounded-2xl shadow-xs hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group"
+                            onclick="toggleSurprise(this)">
+                            <div class="flex items-start justify-between gap-3">
+                                <div
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-tertiary-fixed-dim/40 flex items-center justify-center text-tertiary">
+                                    <span class="material-symbols-outlined text-xl sm:text-2xl">photo_camera</span>
+                                </div>
+                                <span
+                                    class="text-tertiary font-label-sm text-xs font-semibold bg-tertiary-fixed/40 px-2.5 py-1 rounded-full">
+                                    Promised ✓
+                                </span>
+                            </div>
+                            <h4
+                                class="font-headline-sm text-base sm:text-lg text-on-surface mt-3 sm:mt-4 font-semibold group-hover:text-primary transition-colors">
+                                Exploring Koppal & 100 Candid Pictures
+                            </h4>
+                            <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant mt-2 leading-relaxed">
+                                Wandering little paths, laughing uncontrollably, and taking candid shots where neither
+                                of us is ready because we're just having too much fun.
+                            </p>
+                            <div
+                                class="mt-3 pt-2.5 flex items-center gap-1.5 text-primary font-label-sm text-xs font-medium">
+                                <span class="material-symbols-outlined text-sm">favorite</span>
+                                <span>No complaints about cheesy photos allowed!</span>
+                            </div>
+                        </div>
+
+                        <!-- Surprise 3 -->
+                        <div class="cursor-pointer bg-surface-container-lowest p-5 sm:p-6 rounded-2xl shadow-xs hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group"
+                            onclick="toggleSurprise(this)">
+                            <div class="flex items-start justify-between gap-3">
+                                <div
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-secondary-container/60 flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined text-xl sm:text-2xl">cookie</span>
+                                </div>
+                                <span
+                                    class="text-tertiary font-label-sm text-xs font-semibold bg-tertiary-fixed/40 px-2.5 py-1 rounded-full">
+                                    Promised ✓
+                                </span>
+                            </div>
+                            <h4
+                                class="font-headline-sm text-base sm:text-lg text-on-surface mt-3 sm:mt-4 font-semibold group-hover:text-primary transition-colors">
+                                Evening Walk, Yummy Snacks & Deep Talks
+                            </h4>
+                            <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant mt-2 leading-relaxed">
+                                Strolling together as the day winds down, eating delicious treats, and talking about
+                                everything and nothing.
+                            </p>
+                            <div
+                                class="mt-3 pt-2.5 flex items-center gap-1.5 text-primary font-label-sm text-xs font-medium">
+                                <span class="material-symbols-outlined text-sm">favorite</span>
+                                <span>Wishing the sunset would slow down for us</span>
+                            </div>
+                        </div>
+
+                        <!-- Surprise 4 -->
+                        <div class="cursor-pointer bg-surface-container-lowest p-5 sm:p-6 rounded-2xl shadow-xs hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group"
+                            onclick="toggleSurprise(this)">
+                            <div class="flex items-start justify-between gap-3">
+                                <div
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+                                    <span
+                                        class="material-symbols-outlined text-xl sm:text-2xl">volunteer_activism</span>
+                                </div>
+                                <span
+                                    class="text-tertiary font-label-sm text-xs font-semibold bg-tertiary-fixed/40 px-2.5 py-1 rounded-full">
+                                    Promised ✓
+                                </span>
+                            </div>
+                            <h4
+                                class="font-headline-sm text-base sm:text-lg text-on-surface mt-3 sm:mt-4 font-semibold group-hover:text-primary transition-colors">
+                                Unlimited Love, Hugs & Clingy Teasing
+                            </h4>
+                            <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant mt-2 leading-relaxed">
+                                Being ridiculously clingy, making you laugh until you complain about your annoying
+                                hubby, and giving you all the affection in the universe.
+                            </p>
+                            <div
+                                class="mt-3 pt-2.5 flex items-center gap-1.5 text-primary font-label-sm text-xs font-medium">
+                                <span class="material-symbols-outlined text-sm">favorite</span>
+                                <span>Extra cuddles & tight hugs guaranteed 🫂</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grand Invitation CTA Section -->
+            <section class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+                <div
+                    class="relative max-w-3xl mx-auto bg-surface-container-lowest p-6 sm:p-12 md:p-14 rounded-3xl shadow-[0_16px_48px_rgba(118,75,68,0.12)] space-y-5 sm:space-y-6 border border-secondary-fixed/50">
+                    <!-- Heartbeat Ring Icon -->
+                    <div
+                        class="relative mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-secondary-fixed flex items-center justify-center">
+                        <span class="absolute inset-0 rounded-full bg-primary-container/20 animate-ping"></span>
+                        <span class="material-symbols-outlined text-primary text-3xl sm:text-4xl"
+                            style="font-variation-settings: 'FILL' 1;">favorite</span>
+                    </div>
+
+                    <div class="space-y-2 sm:space-y-3">
+                        <h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl text-on-surface">
+                            Will You Spend This Day With Me, Wifey?
+                        </h2>
+                        <p
+                            class="font-body-lg text-sm sm:text-base md:text-lg text-on-surface-variant max-w-xl mx-auto">
+                            The day is planned, your daddy is counting down every moment, and my whole heart is waiting
+                            for you in Koppal.
+                        </p>
+                    </div>
+
+                    <!-- Main Action Buttons -->
+                    <div class="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                        <button
+                            class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-base sm:text-lg font-semibold shadow-[0_6px_20px_rgba(225,29,72,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                            id="say-yes-btn" onclick="celebrateYes()">
+                            <span>Say Yes & Let Daddy Spoil You! ♡</span>
+                            <span class="material-symbols-outlined text-xl sm:text-2xl"
+                                style="font-variation-settings: 'FILL' 1;">favorite</span>
+                        </button>
+                        <button
+                            class="w-full sm:w-auto px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-xs sm:text-sm font-semibold hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                            onclick="sneakPeekModal()">
+                            <span class="material-symbols-outlined text-base sm:text-lg">loyalty</span>
+                            <span>A Little Note For You</span>
+                        </button>
+                    </div>
+
+                    <p class="font-label-sm text-xs sm:text-sm text-secondary italic pt-1">
+                        * Absolutely no complaints about being too cheesy accepted. Hehehe. 😭💗
+                    </p>
+                </div>
+            </section>
+
+            <!-- Celebration Modal (Hidden by Default) -->
+            <div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4 hidden transition-opacity duration-300"
+                id="celebration-modal" onclick="if(event.target === this) closeModal()">
+                <div
+                    class="relative bg-surface-container-lowest max-w-lg w-full rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-[0_24px_60px_rgba(0,0,0,0.2)] text-center space-y-5 sm:space-y-6 max-h-[90vh] overflow-y-auto">
+                    <div
+                        class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-secondary-fixed flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl"
+                            style="font-variation-settings: 'FILL' 1;">celebration</span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <span
+                            class="font-label-md text-xs sm:text-sm text-primary font-bold uppercase tracking-wider">It's
+                            Official! ♡</span>
+                        <h3 class="font-headline-lg text-xl sm:text-2xl text-on-surface">You Just Made Daddy The
+                            Happiest Hubby!</h3>
+                        <p class="font-body-md text-xs sm:text-sm text-on-surface-variant">
+                            I cannot wait to see your beautiful smile, hold your hand in Koppal, tease you endlessly,
+                            and spend an unforgettable day together.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-3.5 sm:p-4 bg-surface-container-low rounded-xl text-left space-y-1.5 text-xs sm:text-sm">
+                        <div class="flex items-center gap-2 text-primary font-semibold font-label-md">
+                            <span class="material-symbols-outlined text-base">check_circle</span>
+                            <span>Next step for my wifey:</span>
+                        </div>
+                        <p class="font-body-sm text-on-surface-variant">
+                            Get ready for the biggest hugs, delicious food, silly selfies, and endless love from your
+                            daddy.
+                        </p>
+                    </div>
+
+                    <button
+                        class="w-full py-3.5 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-sm sm:text-base font-semibold shadow-md hover:opacity-95 transition-opacity cursor-pointer"
+                        onclick="closeModal()">
+                        I Love You Daddy! See You in Koppal ♡
+                    </button>
+                </div>
+            </div>
+
+            <!-- Note / Preview Lightbox Modal -->
+            <div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4 hidden"
+                id="room-preview-modal" onclick="if(event.target === this) closeRoomModal()">
+                <div
+                    class="relative bg-surface-container-lowest max-w-xl w-full rounded-2xl overflow-hidden shadow-2xl p-5 sm:p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">favorite</span>
+                            <h4 class="font-headline-sm text-lg sm:text-xl text-on-surface">A Note In Daddy's Heart</h4>
+                        </div>
+                        <button
+                            class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-surface-container-highest cursor-pointer"
+                            onclick="closeRoomModal()">
+                            <span class="material-symbols-outlined text-lg">close</span>
+                        </button>
+                    </div>
+
+                    <!-- <div class="rounded-xl overflow-hidden aspect-video bg-surface-container">
+                        <img alt="Couple in romantic sunset" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA6-66zDj2dpRgZf1mFdCUM4_-KTiGAGMR_7i8E04rz67CLdLgJQNf3DOipg5YD8d_vKAXs6xDL7MZ4xT6TFIPMkuHoPEvlNzM0uNjUYWCv9JQDM20YWUpkzxZKC2NAOWTyCk4swvdE6J0mJaPU-DrxUV_1UXlcQ1Voy2CZBYN54v-vd9_6ehBTT2CioYz-WuhgiBewC0XdztuSuHYHM_6H2NW0YF88i-M79il7pcNPIfKnHXbw2YB1A" />
+                    </div> -->
+
+                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                        "You're not just my baby or my girlfriend, wifey. You're the person I want to keep choosing,
+                        keep growing with, and keep making memories with. Forever your daddy, your hubby, and your
+                        boy💖💖💖💖💖💖😘😘😘😘😘."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Client Logic (Audio, Confetti, Touch Gestures) -->
+        <script>
+            // Audio elements and UI state
+            const bgAudio = document.getElementById('bg-audio');
+            const musicToggleBtn = document.getElementById('music-toggle-btn');
+            const musicIcon = document.getElementById('music-icon');
+            const musicBars = document.getElementById('music-bars');
+            const musicStatusText = document.getElementById('music-status-text');
+            const musicPulse = document.getElementById('music-pulse');
+            const muteIcon = document.getElementById('mute-icon');
+
+            let isAudioPlaying = false;
+            let userHasInteracted = false;
+
+            function updateAudioUI(playing) {
+                isAudioPlaying = playing;
+                if (!musicIcon || !musicBars || !musicStatusText) return;
+
+                if (playing) {
+                    musicIcon.textContent = 'pause';
+                    musicBars.classList.add('music-playing');
+                    musicStatusText.textContent = 'Playing for you ♡';
+                    if (musicPulse) musicPulse.classList.remove('hidden');
+                } else {
+                    musicIcon.textContent = 'play_arrow';
+                    musicBars.classList.remove('music-playing');
+                    musicStatusText.textContent = 'Paused • Tap to resume ♪';
+                    if (musicPulse) musicPulse.classList.add('hidden');
+                }
+            }
+
+            function startAudio() {
+                if (!bgAudio) return;
+                const playPromise = bgAudio.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        updateAudioUI(true);
+                    }).catch((err) => {
+                        console.log('Autoplay deferred pending user interaction:', err);
+                        updateAudioUI(false);
+                        if (musicStatusText) {
+                            musicStatusText.textContent = 'Tap anywhere for music 🎵';
+                        }
+                    });
+                }
+            }
+
+            function toggleAudioPlayback() {
+                if (!bgAudio) return;
+                if (bgAudio.paused) {
+                    bgAudio.play().then(() => {
+                        updateAudioUI(true);
+                    }).catch((err) => {
+                        console.log('Play failed:', err);
+                    });
+                } else {
+                    bgAudio.pause();
+                    updateAudioUI(false);
+                }
+            }
+
+            function toggleMute() {
+                if (!bgAudio) return;
+                bgAudio.muted = !bgAudio.muted;
+                if (muteIcon) {
+                    muteIcon.textContent = bgAudio.muted ? 'volume_off' : 'volume_up';
+                }
+            }
+
+            if (musicToggleBtn) {
+                musicToggleBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleAudioPlayback();
+                });
+            }
+
+            // Attempt autoplay when DOM is ready
+            document.addEventListener('DOMContentLoaded', () => {
+                startAudio();
+            });
+            window.addEventListener('load', () => {
+                if (bgAudio && bgAudio.paused) {
+                    startAudio();
+                }
+            });
+
+            // Browser Autoplay Policy Fallback: start on first touch/click anywhere
+            function handleFirstInteraction() {
+                if (userHasInteracted) return;
+                userHasInteracted = true;
+                if (bgAudio && bgAudio.paused) {
+                    startAudio();
+                }
+                window.removeEventListener('click', handleFirstInteraction);
+                window.removeEventListener('touchstart', handleFirstInteraction);
+                window.removeEventListener('keydown', handleFirstInteraction);
+            }
+
+            window.addEventListener('click', handleFirstInteraction, { passive: true });
+            window.addEventListener('touchstart', handleFirstInteraction, { passive: true });
+            window.addEventListener('keydown', handleFirstInteraction, { passive: true });
+
+            // Tactile Wax Stamp Heart Burst
+            function celebrateStamp(el) {
+                for (let i = 0; i < 8; i++) {
+                    const heart = document.createElement('span');
+                    heart.className = 'floating-heart material-symbols-outlined text-primary text-xl';
+                    heart.style.fontVariationSettings = "'FILL' 1";
+                    heart.textContent = 'favorite';
+
+                    const angle = (Math.PI * 2 * i) / 8 + (Math.random() - 0.5) * 0.5;
+                    const distance = 40 + Math.random() * 40;
+                    const tx = Math.cos(angle) * distance;
+                    const ty = Math.sin(angle) * distance;
+                    heart.style.setProperty('--tx', `${tx}px`);
+                    heart.style.setProperty('--ty', `${ty}px`);
+                    heart.style.left = '50%';
+                    heart.style.top = '50%';
+
+                    el.appendChild(heart);
+                    setTimeout(() => heart.remove(), 1200);
+                }
+            }
+
+            // Simple Confetti & Heart Emitter for the Big Yes
+            function celebrateYes() {
+                const modal = document.getElementById('celebration-modal');
+                const canvas = document.getElementById('scrapbook-canvas');
+                if (!modal || !canvas) return;
+
+                modal.classList.remove('hidden');
+                canvas.classList.remove('hidden');
+
+                const ctx = canvas.getContext('2d');
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                const hearts = [];
+                const colors = ['#E11D48', '#BE0037', '#FFA6B1', '#C5ECCC', '#FFD9DC'];
+
+                for (let i = 0; i < 70; i++) {
+                    hearts.push({
+                        x: window.innerWidth / 2 + (Math.random() - 0.5) * 200,
+                        y: window.innerHeight / 2 + (Math.random() - 0.5) * 100,
+                        size: Math.random() * 14 + 10,
+                        vx: (Math.random() - 0.5) * 8,
+                        vy: (Math.random() - 0.9) * 10 - 2,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        rotation: Math.random() * 360,
+                        vrot: (Math.random() - 0.5) * 10,
+                        opacity: 1
+                    });
+                }
+
+                let animationId;
+                function draw() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    let alive = false;
+
+                    hearts.forEach(h => {
+                        h.x += h.vx;
+                        h.y += h.vy;
+                        h.vy += 0.2; // gravity
+                        h.rotation += h.vrot;
+                        h.opacity -= 0.008;
+
+                        if (h.opacity > 0) {
+                            alive = true;
+                            ctx.save();
+                            ctx.translate(h.x, h.y);
+                            ctx.rotate((h.rotation * Math.PI) / 180);
+                            ctx.globalAlpha = Math.max(0, h.opacity);
+                            ctx.fillStyle = h.color;
+                            ctx.beginPath();
+                            const topCurveHeight = h.size * 0.3;
+                            ctx.moveTo(0, topCurveHeight);
+                            ctx.bezierCurveTo(0, 0, -h.size / 2, 0, -h.size / 2, topCurveHeight);
+                            ctx.bezierCurveTo(-h.size / 2, (h.size + topCurveHeight) / 2, 0, (h.size + topCurveHeight) / 1.5, 0, h.size);
+                            ctx.bezierCurveTo(0, (h.size + topCurveHeight) / 1.5, h.size / 2, (h.size + topCurveHeight) / 2, h.size / 2, topCurveHeight);
+                            ctx.bezierCurveTo(h.size / 2, 0, 0, 0, 0, topCurveHeight);
+                            ctx.fill();
+                            ctx.restore();
+                        }
+                    });
+
+                    if (alive) {
+                        animationId = requestAnimationFrame(draw);
+                    } else {
+                        canvas.classList.add('hidden');
+                        cancelAnimationFrame(animationId);
+                    }
+                }
+                draw();
+            }
+
+            function closeModal() {
+                const modal = document.getElementById('celebration-modal');
+                if (modal) modal.classList.add('hidden');
+            }
+
+            function sneakPeekModal() {
+                const room = document.getElementById('room-preview-modal');
+                if (room) room.classList.remove('hidden');
+            }
+
+            function closeRoomModal() {
+                const room = document.getElementById('room-preview-modal');
+                if (room) room.classList.add('hidden');
+            }
+
+            function toggleSurprise(card) {
+                card.classList.toggle('scale-[1.02]');
+            }
+        </script>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-container-low py-10 sm:py-14 shadow-[0_-2px_12px_rgba(118,75,68,0.04)]">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left">
+            <div class="flex flex-col gap-1.5 sm:gap-2">
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <span class="font-headline-sm text-lg sm:text-xl text-primary font-bold">With all my heart</span>
+                    <span class="text-primary-container font-label-lg text-lg">❦</span>
+                </div>
+                <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant max-w-md">
+                    Handcrafted with love notes, pressed memories, and ticket stubs for our sweetest journey in Koppal.
+                </p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <div
+                    class="inline-flex items-center gap-2 bg-surface px-3 py-1.5 rounded-lg shadow-[0_2px_8px_rgba(118,75,68,0.08)] -rotate-1">
+                    <span class="material-symbols-outlined text-secondary text-sm sm:text-base">mail</span>
+                    <span class="font-label-md text-xs sm:text-sm text-secondary font-medium">Special Delivery • Stamped
+                        With Love</span>
+                </div>
+                <span class="font-label-sm text-[10px] sm:text-xs text-on-surface-variant">© Our Next Chapter • Yours
+                    and only yours forever.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
